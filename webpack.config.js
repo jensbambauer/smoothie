@@ -35,9 +35,10 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 module.exports = {
-    entry: {
-        smoothie: ['./src/index.js']
-    },
+    entry: ['@babel/polyfill', './src/index.js'],
+    // entry: {
+    //     smoothie: ['./src/index.js']
+    // },
 
     output: {
         library: 'smoothie',
@@ -49,6 +50,7 @@ module.exports = {
     plugins,
 
     devServer: {
+        host: '0.0.0.0',
         contentBase: './example',
         hot: true,
         historyApiFallback: true,

@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/sndrgb/smoothie",
   "dependencies": {
+    "@babel/polyfill": "^7.0.0",
     "classie": "^1.0.0",
     "dom-create-element": "^1.0.2",
     "events-mixin": "^1.3.0",
