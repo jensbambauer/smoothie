@@ -18,11 +18,11 @@ function init() {
 
 init();
 
-setTimeout(() => {
+setTimeout(function() {
     const els = document.querySelectorAll('.el');
 
-    smoothie.addListener((status) => {
-        els.forEach((el) => {
+    smoothie.addListener(function(status) {
+        els.forEach(function(el) {
             if (smoothie.inViewport(el)) {
                 el.setAttribute('data-animated', '');
             } else {
@@ -39,7 +39,7 @@ setTimeout(() => {
 
 let toggle = true;
 const $switch = document.querySelector('#switch');
-$switch.addEventListener('click', () => {
+$switch.addEventListener('click', function() {
     toggle = !toggle;
 
     if (!toggle) {
@@ -53,7 +53,7 @@ $switch.addEventListener('click', () => {
 
 let enable = true;
 const $enabler = document.querySelector('#enable');
-$enabler.addEventListener('click', () => {
+$enabler.addEventListener('click', function() {
     enable = !enable;
 
     if (!enable) {

@@ -35,10 +35,10 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 module.exports = {
-    entry: ['@babel/polyfill', './src/index.js'],
-    // entry: {
-    //     smoothie: ['./src/index.js']
-    // },
+    // entry: ['@babel/polyfill', './src/index.js'],
+    entry: {
+        smoothie: ['./src/index.js']
+    },
 
     output: {
         library: 'smoothie',
